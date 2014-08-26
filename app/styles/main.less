@@ -24,15 +24,27 @@ body {
 	width: 100%;
 	position: absolute;
 	.clearfix();
-	
-	
+
+
 	.trailer {
 	    position: relative;
 	    padding-bottom: 56.25%;
 	    padding-top: 35px;
 	    height: 0;
 	    overflow: hidden;
-	    
+
+			/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: @screen-sm-min) { 			margin-top: 35px; }
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: @screen-md-min) { 			margin-top: 0px; }
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: @screen-lg-min) { 			margin-top: 0px; }
+
 		iframe {
 			.center-block();
 		    position: absolute;
@@ -41,8 +53,8 @@ body {
 		    width: 100%;
 		    height: 100%;
 			}
-	}	
-	
+	}
+
 	.header {
 		.clearfix();
 		position: fixed;
@@ -58,7 +70,7 @@ body {
 		h4 {
 			text-align: center;
 			color: #fff;
-			font-size: 22px;			
+			font-size: 22px;
 			a {
 				color: @yellow;
 				font-weight: 100;
@@ -67,9 +79,9 @@ body {
         font-size: 18px;
 				margin: 0 auto;
 				line-height: normal;
-				padding: 0;		
+				padding: 0;
 				text-transform: uppercase;
-				letter-spacing: 2px;	
+				letter-spacing: 2px;
 			}
 			.download-platforms {
   			.icon {
@@ -88,7 +100,7 @@ body {
 				font-family: @headings-font-family;
 				text-transform: uppercase;
 				letter-spacing: 2px;
-				color: #3860a8;					
+				color: #3860a8;
 				font-size: 24px;
 				font-weight: 900;
 			}
@@ -136,12 +148,12 @@ body {
 			img {
 				.text-center();
 				.center-block();
-				margin-bottom: 60px;					
+				margin-bottom: 60px;
 			}
 		}
 		.share {
 			.center-block();
-			.text-center();			
+			.text-center();
 			margin-bottom: 30px;
 			a {
 				padding: 0 5px;
@@ -153,13 +165,13 @@ body {
 		.center-block();
 		font-weight: 300;
 		text-transform: uppercase;
-		letter-spacing: 2px;	
+		letter-spacing: 2px;
 	}
-	section {	
+	section {
 		&#intro {
 			margin: 0;
 			background-size: cover;
-			background-image: url(../images/backgrounds/blur-header.gif); 	
+			background-image: url(../images/backgrounds/blur-header.gif);
 			#logo {
 				.center-block();
 				padding-top: 120px;
@@ -171,11 +183,11 @@ body {
 				font-size: 86px;
 				color: #3860a8;
 				font-style: italic;
-			  	text-shadow: 1px 1px 0px #000;				
+			  	text-shadow: 1px 1px 0px #000;
 			  	margin-bottom: 40px;
 			}
 			padding: 50px 0;
-						
+
 		}
 		&#game {
 			background-color: #131822;
@@ -186,12 +198,12 @@ body {
 				text-align: left;
 				font-size: 80px;
 				font-weight: 200;
-				
-			}	
+
+			}
 			p {
 				&.lead {
 					font-size: 42px;
-					color: #ddd;			
+					color: #ddd;
 				}
 			}
 			#animated-gifs {
@@ -201,14 +213,14 @@ body {
 					text-align: center;
 					font-size: 18px;
 					font-weight: 300;
-					
+
 				}
 				img {
 					.center-block();
 				}
 			}
 		}
-		
+
 		&#fates {
 			background: @yellow;
 			margin: 0;
@@ -226,7 +238,7 @@ body {
 				text-transform: uppercase;
 				letter-spacing: 2px;
 				color: #2f2a08;
-				
+
 			}
 		  .fate {
 				h4 {
@@ -246,24 +258,24 @@ body {
 			        position: relative;
 			        z-index: 5;
 			      }
-			    }			    
+			    }
 			  }
 			}
-		
+
 		&#features {
-		
+
 			background: #37b956;
 			color: lighten(#37b956,40%);
 			padding: 40px 0;
-			
+
 			h3 {
 				font-size: 62px;
 				color: #fff;
 				text-align: left;
 			  	text-shadow: 2px 2px 0px darken(#37b956,20%);
-			} 
+			}
 			strong {
-				color: #fff;				
+				color: #fff;
 			}
 			ul {
 				.list-unstyled();
@@ -271,7 +283,7 @@ body {
 					font-size: 28px;
 					padding: 20px 0;
 					p {
-						font-weight: 200;						
+						font-weight: 200;
 						strong {
 							font-weight: 400;
 							letter-spacing: 1px;
@@ -279,7 +291,7 @@ body {
 					}
 				}
 			}
-			
+
 		}
 		&#quotes {
 			padding: 50px 0;
@@ -292,9 +304,9 @@ body {
 			p.lead {
 				font-weight: 400;
 			}
-			
+
 		}
-		
+
 		&#humble {
 			margin: 0;
 			height: auto;
@@ -322,7 +334,7 @@ body {
   			position: absolute;
         top: -90px;
 				display: block;
-			}			
+			}
 			p.lead {
 				text-align: center;
 				color: #ccc;
@@ -332,7 +344,7 @@ body {
 				strong {
 					font-weight: 400;
 					color: #fff;
-					
+
 				}
 			}
 			p.disclaimer {
@@ -343,7 +355,7 @@ body {
 				font-style: italic;
 				padding: 4px 8px;
 				font-weight: 200;
-				
+
 				width: 50%;
 				a {
 					color: #fff;
