@@ -73,11 +73,17 @@ body {
 			color: #fff;
 			font-size: 22px;
 			a {
-				color: @yellow;
+				&.buy {
+
+					color: @yellow;
+					font-size: 18px;
+					border-bottom: solid 2px desaturate(@yellow,20%);
+
+				}
 				font-weight: 100;
 				text-decoration: none;
-				border-bottom: solid 2px desaturate(@yellow,20%);
-        font-size: 18px;
+				border-bottom: solid 2px #fff;
+				color: #fff;
 				margin: 0 auto;
 				line-height: normal;
 				padding: 0;
@@ -267,12 +273,12 @@ font-weight: 900;
 				font-size: 92px;
 				font-style: italic;
 				font-weight: 300;
-			  	text-shadow: 2px 2px 0px #fff;
-				text-align: left;
+			  text-shadow: 2px 2px 0px #fff;
 				font-weight: 800;
 				text-transform: uppercase;
 				letter-spacing: 2px;
 				color: #2f2a08;
+				margin: 0 0 40px 0;
 
 			}
 		  .fate {
