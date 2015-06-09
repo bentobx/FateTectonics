@@ -2,8 +2,8 @@
   "name": "fated",
   "private": true,
   "dependencies": {
-    "bootstrap": "~3.2.0",
-    "jquery": "~1.11.0",
+    "bootstrap": "~3.3.4",
+    "jquery": "~2.1.4",
     "social-media": "hejty/social-media#master"
   },
   "devDependencies": {}

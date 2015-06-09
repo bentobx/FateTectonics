@@ -330,7 +330,7 @@ module.exports = function (grunt) {
                         '{,*/}*.html',
                         'styles/fonts/{,*/}*.*',
 						'images/css-animations{,*/}*.*',
-						'images/videos/{,*/}*.*'						
+						'images/videos/{,*/}*.*'
                     ]
                 }, {
                     expand: true,
@@ -421,5 +421,5 @@ module.exports = function (grunt) {
         'test',
         'build'
     ]);
-    
+
 };
